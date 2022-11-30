@@ -36,11 +36,11 @@ s2 = s1.split()
 
 all_words = ' '.join(text for text in s2)
 
-result = []
+result = ""
 # extracting keywords
 kw_extractor = yake.KeywordExtractor()
 keywords = kw_extractor.extract_keywords(all_words)
 for kw in keywords:
-    result.append(kw[0])
+    result += kw[0] + ","
 
 print(result)
