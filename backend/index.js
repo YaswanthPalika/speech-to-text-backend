@@ -36,12 +36,12 @@ app.listen(PORT, () => {
 
 app.post("/", async (req, res) => {
   const { data } = req.body;
-  //console.log(data);
+  console.log(data);
   const process = await spawn("python3", ["./sample2.py", data]);
   process.stdout.on("data", function (data) {
     let result = data.toString();
     result = JSON.stringify(result);
-    // console.log(result);
+  console.log(result);
     res.send(result);
   });
 });

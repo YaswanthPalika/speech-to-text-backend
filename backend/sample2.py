@@ -2,17 +2,7 @@
 #import pyttsx3
 import re
 import sys
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import string
-import nltk
 import warnings
-from wordcloud import WordCloud, ImageColorGenerator
-from PIL import Image
-import urllib
-import requests
 import yake
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
